@@ -1,0 +1,92 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  padding: clear;
+  font-family: 'Lucida Sans';
+  }
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2{
+  font-weight: bold;
+  border: 2px solid black;
+  float: right;
+  margin-top: 0px;
+  position: relative;
+  }
+
+.pink{
+    background-color: #FF8B85;
+}
+
+.red{
+    background-color: #d23854;
+}
+
+.green {
+    background-color:#ebf9ab;
+}
+p {
+  padding: 5%;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div {
+  margin: 10px;
+  }
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+   }
+
+.row > div{
+  background-color: grey;
+  /* width:30%; */
+  border: 3px solid black;
+  }
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 30%;
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-5, .col-md-6, .col-md-7 {
+    float: left;
+  }
+  .col-md-5 {
+    width: 47%;
+    float: left;
+  }
+  .col-md-6 {
+    width: 47%;
+    float: right;
+     }
+  .col-md-7 {
+    width: 98%;
+    float: left;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+      width: 100%;
+   }
+  }
+  
